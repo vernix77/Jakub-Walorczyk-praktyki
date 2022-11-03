@@ -62,8 +62,14 @@
 .icon-x:before {
 	content: "\e90b";
 }
-.nav-item{
+.nav-item {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
 }
+.header-nav {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
