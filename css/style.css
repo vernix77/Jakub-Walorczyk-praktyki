@@ -105,14 +105,18 @@ nav {
 }
 .nav-action__item {
 	font-weight: bold;
+	color: black;
 	display: flex;
 	width: fit-content;
 	min-width: 10rem;
 	align-items: center;
 	gap: 0.5rem;
 	text-decoration: none;
-	color: black;
+	transition: 0.4s;
 	/* font-size: 0.9rem; */
+}
+.nav-action__item:hover{
+	color: royalblue;
 }
 .nav-action__item > img {
 	max-width: 2rem;
@@ -125,6 +129,7 @@ nav {
 	border: 1px solid #ccc;
 	flex-wrap: wrap;
 	background-color: white;
+	transition: 0.4s;
 }
 
 .nav_options > a {
@@ -132,6 +137,10 @@ nav {
 	font-weight: bold;
 	text-decoration: none;
 	font-size: 0.75rem;
+	transition: 0.4s;
+}
+.nav_options a:hover{
+	color: royalblue;
 }
 
 .wraper {
@@ -182,6 +191,7 @@ nav {
 
 .nav-baner__cart {
 	display: flex;
+	color: black;
 }
 
 .cart__amount {
@@ -252,6 +262,10 @@ nav {
 	max-width: fit-content;
 	margin-left: 10rem;
 	cursor: pointer;
+	transition: 0.4s;
+}
+.main_banner-img-cover button:hover{
+	scale: 1.05;
 }
 .white_logo {
 	background-color: white;
@@ -292,6 +306,7 @@ nav {
 	overflow: hidden;
 	flex-wrap: wrap;
 	flex-direction: column;
+	transition: 0.4s;
 }
 
 .quick_helpers-option {
@@ -317,13 +332,29 @@ nav {
 }
 .quick_helpers-option:first-of-type {
 	background-image: url("../photos/img_02.jpg");
+	width: 400px;
+	transition: 0.4s;
 }
 .quick_helpers-option:nth-of-type(2) {
 	background-image: url("../photos/img_03.jpg");
+	width: 400px;
+	transition: 0.4s;
 }
 .quick_helpers-option:nth-of-type(3) {
 	background-image: url("../photos/img_05.jpg");
+	width: 400px;
+	transition: 0.4s;
 }
+.quick_helpers-option:first-of-type:hover {
+	scale: 1.05;
+}
+.quick_helpers-option:nth-of-type(2):hover {
+	scale: 1.05;
+}
+.quick_helpers-option:nth-of-type(3):hover {
+	scale: 1.05;
+}
+
 .quick_helpers-photo-cover > p {
 	margin: 0;
 	padding-left: 2rem;
@@ -425,12 +456,17 @@ nav {
 	border: none;
 	margin: 3rem auto;
 	cursor: pointer;
+	transition: 0.4s;
 }
 
 .insp_wrapper {
 	width: 100%;
 	display: flex;
 	align-items: center;
+	transition: 0.4s;
+}
+.inspiration_btn:hover{
+	scale: 1.05;
 }
 
 .why_us {
@@ -557,5 +593,11 @@ nav {
 @media screen and (width < 730px) {
     .main_banner-img-cover, .main_banner-img-cover button {
         grid: none;
+    }
+}
+@media screen and (width < 700px) {
+    .advantages_op {
+        grid: none;
+		/* grid-template-columns: 1tr 1tr 1tr; */
     }
 }
