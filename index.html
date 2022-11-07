@@ -1,107 +1,302 @@
 <!DOCTYPE html>
-<html lang="pl">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable = no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="format-detection" content="telephone=no">
-    <title>Stronek siuuu</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
-
 <body>
-    <header>
-        <div class="header">
-            <div class="header-item">
-                <h1 class="logo"><img src="photos/logo.png" alt="logo firmy elhurt"></h1>
-                <ul class="header-icons">
-                    <li><a href="javascript:void(0)"><i class="icon-phone"></i>Kontakt</a>
-                    <li><a href="javascript:void(0)"><i class="icon-star"></i>Ulubione</a>
-                    <li><a href="javascript:void(0)"><i class="icon-icon_01"></i>Moje konto</a>
-                    <li>
-                        <div class="header-basket">
-                            <div class="header-box-left"><i class="icon icon-cart"></i></div>
-                            <div class="header-basket-box"><a href="#javascript:void(0)">Twój Koszyk<br>3456,00zł</a>
-                            </div>
-                            <div class="header-box-right"><i class="icon-icon_04"></i></div>
-                        </div>
-                </ul>
-            </div>
+    <nav>
+        <div class="nav-baner">
+            <img src="photos/logo.png" alt="baner">
         </div>
-        <nav>
-            <div class="header-header">
-                <ul class="header-item">
-                    <li><a href="javascript:void(0)">źródła światła</a></li>
-                    <li><a href="javascript:void(0)">oświetlenie wewnętrzne</a></li>
-                    <li><a href="javascript:void(0)">gniazdka i wyłączniki</a></li>
-                    <li><a href="javascript:void(0)">automatyka i sterowanie</a></li>
-                    <li><a href="javascript:void(0)">rozdzielnie i aparatura</a></li>
-                    <li><a href="javascript:void(0)">materiały instalacyjne</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <div class="section1">
-            <img src="photos/img_01.jpg">
-        </div>
-        <div class="section2">
-            <span>
-                <ul>
-                    <li><a href="javascript:void(0)"><img src="photos/img_02.jpg"></a></li>
-                    <li><a href="javascript:void(0)"><img src="photos/img_03.jpg"></a></li>
-                    <li><a href="javascript:void(0)"><img src="photos/img_05.jpg"></a></li>
-                </ul>
-            </span>
-        </div>
-        <div class="section3">
-            <span>
-                <div><a>Polecane produkty</a></div>
-            </span>
-        </div>
-        <div class="section4">
-            <span>
-                <ul>
-                    <li><a href="javascript:void(0)"><img src="./photos/img_06.jpg" alt="zdjęcie produktu(żarówka)">
-                    </li>
-                    <li><a href="javascript:void(0)"><img src="./photos/img_06.jpg" alt="zdjęcie produktu(żarówka)">
-                    </li>
-                    <li><a href="javascript:void(0)"><img src="./photos/img_06.jpg" alt="zdjęcie produktu(żarówka)">
-                    </li>
-                    <li><a href="javascript:void(0)"><img src="./photos/img_06.jpg" alt="zdjęcie produktu(żarówka)">
-                    </li>
-                    <li><a href="javascript:void(0)"><img src="./photos/img_06.jpg" alt="zdjęcie produktu(żarówka)">
-                    </li>
-                </ul>
-            </span>
-        </div>
-        <div class="section5">
-            <span>
-                <div><a href="javascript:void(0)">Zobacz wszystkie inspiracje</a></div>
-            </span>
-        </div>
-        <div class="section6">
-            <span>
-                <div><a href="javascript:void(0)"><img src="./photos/img_07.jpg" alt="zdjęcie produktu(żarówka)"></a>
+        <div class="nav-action">
+            <a src="#" class="nav-action__item">
+                <img src="icons/icon_01.svg" alt="">
+                KONTAKT
+            </a>
+            <a src="#" class="nav-action__item">
+                <img src="icons/icon_02.svg" alt="">
+                ULUBIONE
+            </a>
+            <a src="#" class="nav-action__item">
+                <img src="icons/icon_03.svg" alt="">
+                MOJE KONTO
+            </a>
+            <div class="nav-baner__cart">
+                <div class="wraper">
+                    <div class="nav-baner__cart-icon">
+                        <img src="./icons/icon_06.svg" alt="">
+                        <div class="cart__amount">342</div>
+                    </div>
+                    <div class="nav-baner__cart-info">
+                        <p>TWÓJ KOSZYK</p>
+                        <p style="margin: 0">3456,00 zł</p>
+                    </div>
                 </div>
-            </span>
-        </div>
-    </main>
-    <footer>
-        <span>
-            <div>
-                <ul class="header-item">
-                    <li><a href="javascript:void(0)">Informacje</a></li>
-                    <li><a href="javascript:void(0)">Informacje</a></li>
-                    <li><a href="javascript:void(0)">Konto</a></li>
-                    <li><a href="javascript:void(0)">Informacje</a></li>
-                </ul>
+                <div class="nav-baner__cart-arrow">
+                    <div class="white_logo"></div>
+                </div>
             </div>
-        </span>
-    </footer>
+        </div>
+        
+    </nav>
+    <div class="nav_options">
+        <a href="#">ŻRÓDŁA ŚWIATŁA</a>
+        <a href="#">OŚWIETLENIE ZEWNĘTRZNE</a>
+        <a href="#">GNIAZDKA, WYŁĄCZNIKI</a>
+        <a href="#">AUTOMATYKA, STEROWANIE</a>
+        <a href="#">ROZDZIELNIE I APARATURA</a>
+        <a href="#">MATERIAŁY INSTALACYJNE</a>
+    </div>
+    <div class="main_banner">
+        <div class="banner_wraper">
+            <img src="./photos/img_01.jpg" alt="">
+            <div class="main_banner-img-cover">
+                <p>Poznaj SEDNA</p>
+                <p>Schneider Electric</p>
+                <p>Sedna to osprzęt elektroinstalacyjny o wyraźistym krztałcie oraz unikalnej formie</p>
+                <button>ZOBACZ WIĘCEJ</button>
+            </div>
+            <div class="banner__left-controll">
+                <img src="./icons/icon_05.svg" alt="">
+            </div>
+            <div class="banner__right-controll">
+                <img src="./icons/icon_04.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="quick_helpers">
+        <div class="quick_helpers-option">
+            <div class="quick_helpers-photo-cover">
+                <p>Pomoc eksperta</p>
+                <p>Doradzamy</p>
+                <button>ZOBACZ WIĘCEJ</button>
+            </div>
+        </div>
+        <div class="quick_helpers-option">
+            <div class="quick_helpers-photo-cover">
+                <p>Szukaj wygodnie</p>
+                <p>Elhurt Plus</p>
+                <button>ZOBACZ WIĘCEJ</button>
+            </div>
+        </div>
+        <div class="quick_helpers-option">
+            <div class="quick_helpers-photo-cover">
+                <p>Seria Unica</p>
+                <p>Wyjątkowy wzór</p>
+                <button>ZOBACZ WIĘCEJ</button>
+            </div>
+        </div>
+    </div>
+    <div class="recomendations">
+        <h1>
+            Polecane produkty
+            <div class="orange_markup"></div>
+        </h1>
+        <div class="recomendations_products">
+            <div class="recomendations_products-prod">
+                <img src="./photos/img_06.jpg" alt="">
+                <div class="recomendations_products-prod-info">
+                    <p>ŁĄCZNIK JEDNOBIEGUNOWY</p>
+                    <p>Kod produktu: CW1.01/11</p>
+                </div>
+                <div class="recomendations_products-prod-price">
+                    <s>656,65 zł</s>
+                    <p>442,85 zł</p>
+                </div>
+            </div>
+            <div class="recomendations_products-prod">
+                <img src="./photos/img_06.jpg" alt="">
+                <div class="recomendations_products-prod-info">
+                    <p>ŁĄCZNIK JEDNOBIEGUNOWY</p>
+                    <p>Kod produktu: CW1.01/11</p>
+                </div>
+                <div class="recomendations_products-prod-price">
+                    <s>656,65 zł</s>
+                    <p>442,85 zł</p>
+                </div>
+            </div><div class="recomendations_products-prod">
+                <img src="./photos/img_06.jpg" alt="">
+                <div class="recomendations_products-prod-info">
+                    <p>ŁĄCZNIK JEDNOBIEGUNOWY</p>
+                    <p>Kod produktu: CW1.01/11</p>
+                </div>
+                <div class="recomendations_products-prod-price">
+                    <s>656,65 zł</s>
+                    <p>442,85 zł</p>
+                </div>
+            </div><div class="recomendations_products-prod">
+                <img src="./photos/img_06.jpg" alt="">
+                <div class="recomendations_products-prod-info">
+                    <p>ŁĄCZNIK JEDNOBIEGUNOWY</p>
+                    <p>Kod produktu: CW1.01/11</p>
+                </div>
+                <div class="recomendations_products-prod-price">
+                    <s>656,65 zł</s>
+                    <p>442,85 zł</p>
+                </div>
+            </div><div class="recomendations_products-prod">
+                <img src="./photos/img_06.jpg" alt="">
+                <div class="recomendations_products-prod-info">
+                    <p>ŁĄCZNIK JEDNOBIEGUNOWY</p>
+                    <p>Kod produktu: CW1.01/11</p>
+                </div>
+                <div class="recomendations_products-prod-price">
+                    <s>656,65 zł</s>
+                    <p>442,85 zł</p>
+                </div>
+            </div><div class="recomendations_products-prod">
+                <img src="./photos/img_06.jpg" alt="">
+                <div class="recomendations_products-prod-info">
+                    <p>ŁĄCZNIK JEDNOBIEGUNOWY</p>
+                    <p>Kod produktu: CW1.01/11</p>
+                </div>
+                <div class="recomendations_products-prod-price">
+                    <s>656,65 zł</s>
+                    <p>442,85 zł</p>
+                </div>
+            </div><div class="recomendations_products-prod">
+                <img src="./photos/img_06.jpg" alt="">
+                <div class="recomendations_products-prod-info">
+                    <p>ŁĄCZNIK JEDNOBIEGUNOWY</p>
+                    <p>Kod produktu: CW1.01/11</p>
+                </div>
+                <div class="recomendations_products-prod-price">
+                    <s>656,65 zł</s>
+                    <p>442,85 zł</p>
+                </div>
+            </div><div class="recomendations_products-prod">
+                <img src="./photos/img_06.jpg" alt="">
+                <div class="recomendations_products-prod-info">
+                    <p>ŁĄCZNIK JEDNOBIEGUNOWY</p>
+                    <p>Kod produktu: CW1.01/11</p>
+                </div>
+                <div class="recomendations_products-prod-price">
+                    <s>656,65 zł</s>
+                    <p>442,85 zł</p>
+                </div>
+            </div><div class="recomendations_products-prod">
+                <img src="./photos/img_06.jpg" alt="">
+                <div class="recomendations_products-prod-info">
+                    <p>ŁĄCZNIK JEDNOBIEGUNOWY</p>
+                    <p>Kod produktu: CW1.01/11</p>
+                </div>
+                <div class="recomendations_products-prod-price">
+                    <s>656,65 zł</s>
+                    <p>442,85 zł</p>
+                </div>
+            </div><div class="recomendations_products-prod">
+                <img src="./photos/img_06.jpg" alt="">
+                <div class="recomendations_products-prod-info">
+                    <p>ŁĄCZNIK JEDNOBIEGUNOWY</p>
+                    <p>Kod produktu: CW1.01/11</p>
+                </div>
+                <div class="recomendations_products-prod-price">
+                    <s>656,65 zł</s>
+                    <p>442,85 zł</p>
+                </div>
+            </div><div class="recomendations_products-prod">
+                <img src="./photos/img_06.jpg" alt="">
+                <div class="recomendations_products-prod-info">
+                    <p>ŁĄCZNIK JEDNOBIEGUNOWY</p>
+                    <p>Kod produktu: CW1.01/11</p>
+                </div>
+                <div class="recomendations_products-prod-price">
+                    <s>656,65 zł</s>
+                    <p>442,85 zł</p>
+                </div>
+            </div>
+        </div>
+        <div class="insp_wrapper">
+            <button class="inspiration_btn">ZOBACZ WSZYSTKIE INSPIRACJE</button>
+        </div>
+        <div class="why_us">
+            <div class="why_us_cover">
+                <h1>
+                    Sprawdź dlaczego my
+                    <div class="orange_markup"></div>
+                </h1>
+                <p>Początki działalności to rok 2002r i otwarcie hurtowni elektrycznej, oferującej podstawowe produkty do instalacji elektrycznych jak i również materiały używane w przemyśle wydobywczym. Firma dostarczała produkty trudno dostępne do kopalń, zakładów przemysłowych. </p>
+                <div class="advantages">
+                    <div class="advantages_op">
+                        <img src="./icons/icon_07.png" alt="">
+                        <p>SZYBKA WYSYŁKA</p>
+                    </div>
+                    <div class="advantages_op">
+                        <img src="./icons/icon_08.png" alt="">
+                        <p>SZEROKI ASORTYMENT</p>
+                    </div>
+                    <div class="advantages_op">
+                        <img src="./icons/icon_09.png" alt="">
+                        <p>BEZPIECZNE ZWROTY</p>
+                    </div>
+                </div>
+                <div class="insp_wrapper">
+                    <button class="inspiration_btn">INFORMACJE O FIRMIE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_section">
+            <h3>
+                INFORMACJE
+                <div class="orange_markup"></div>
+            </h3>
+            <ul>
+                <li>Informacje o sklepie</li>
+                <li>Porady</li>
+                <li>Blog</li>
+                <li>Galeria inspiracji</li>
+                <li>Kontakt</li>
+                <li>Informacje o sklepie</li>
+            </ul>
+        </div>
+        <div class="footer_section">
+            <h3>
+                INFORMACJE
+                <div class="orange_markup"></div>
+            </h3>
+            <ul>
+                <li>Czas realizacji</li>
+                <li>Koszty przesyłki</li>
+                <li>Zamów próbkę</li>
+                <li>Szycie na wymiar</li>
+                <li>Czas realizacji</li>
+                <li>Koszty przesyłki</li>
+            </ul>
+        </div>
+        <div class="footer_section">
+            <h3>
+                MOJE KONTO
+                <div class="orange_markup"></div>
+            </h3>
+            <ul>
+                <li>Logowanie</li>
+                <li>Rejestracja</li>
+                <li>Zamówienia</li>
+                <li>Ustawienia konta</li>
+                <li>Zmiana hasła</li>
+                <li>Schowek</li>
+            </ul>
+        </div>
+        <div class="footer_section">
+            <h3>
+                INFORMACJE
+                <div class="orange_markup"></div>
+            </h3>
+            <ul>
+                <li>Informacje o sklepie</li>
+                <li>Porady</li>
+                <li>Blog</li>
+                <li>Galeria inspiracji</li>
+                <li>Kontakt</li>
+                <li>Informacje o sklepie</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
