@@ -210,7 +210,7 @@ nav {
 	font-size: 0.6rem;
 	padding: 0.15rem;
 }
-.header_logo-mobile {
+/* .header_logo-mobile {
     margin: 1rem;
     position: absolute;
     top: 0;
@@ -227,7 +227,7 @@ nav {
         grid: none;
 		opacity: 1;
     }
-}
+} */
 
 .main_banner {
 	display: flex;
@@ -279,7 +279,7 @@ nav {
 	margin: 1.5rem 0;
 }
 
-.main_banner-img-cover > button {
+.main_banner-img-cover-button > button {
 	background-color: #f74137;
 	padding: 1rem 2.5rem;
 	color: white;
@@ -352,7 +352,7 @@ nav {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 100%;	
 	color: white;
 	display: flex;
 	flex-direction: column;
@@ -410,7 +410,14 @@ nav {
 	font-family: metropolis-light;
 	font-size: 2rem;
 }
-
+.quick_helpers-photo-cover > p:nth-of-type(2) {
+	font-family: metropolis-light;
+	font-size: 2rem;
+}
+.main_banner-img-cover-button {
+	font-family: metropolis-light;
+	font-size: 12px;
+}
 .quick_helpers-photo-cover > button {
 	background-color: transparent;
 	color: white;
@@ -662,13 +669,14 @@ nav {
 @media screen and (width < 800x) {
     .main_banner-img-cover :nth-of-type(3) {
         grid: none;
-		opacity: 0%;
+		font-size: 0;
     }
 }
-@media screen and (width < 800x) {
+@media screen and (width < 835x) {
     .main_banner-img-cover button {
         grid: none;
-		opacity: 0%;
+		display: none;
+		font-size: 0;
     }
 }
 @media screen and (width < 700px) {
