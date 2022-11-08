@@ -93,7 +93,7 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	padding: 0.5rem;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 0.1px solid #ccc;
 	flex-wrap: wrap;
 	background-color: white;
 }
@@ -115,19 +115,26 @@ nav {
 	transition: 0.4s;
 	/* font-size: 0.9rem; */
 }
+
 .nav-action__item:hover{
 	color: royalblue;
 }
+
 .nav-action__item > img {
 	max-width: 2rem;
 }
+
+.nav-action__item > i {
+	max-width: 2rem;
+}
+
 .nav_options {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
+	/* flex-direction: row; */
 	padding: 1rem 0;
 	border: 1px solid #ccc;
-	flex-wrap: wrap;
 	background-color: white;
 	transition: 0.4s;
 }
@@ -202,6 +209,24 @@ nav {
 	color: white;
 	font-size: 0.6rem;
 	padding: 0.15rem;
+}
+.header_logo-mobile {
+    margin: 1rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    opacity: 0;
+    background-color: white;
+}
+@media screen and (width < 800x) {
+    .header_logo-mobile {
+        grid: none;
+		opacity: 1;
+    }
 }
 
 .main_banner {
@@ -299,17 +324,21 @@ nav {
 
 .quick_helpers {
 	display: grid;
+	flex-wrap: wrap;
 	grid-template-columns: 1fr 1fr 1fr;
 	padding: 0 1rem 1rem;
+	/* width: 100%; */
 	gap: 1rem;
 	max-height: 20rem;
 	overflow: hidden;
-	flex-wrap: wrap;
 	flex-direction: column;
 	transition: 0.4s;
 }
 
 .quick_helpers-option {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
 	min-height: 20rem;
 	position: relative;
 	background-size: cover;
@@ -332,17 +361,29 @@ nav {
 }
 .quick_helpers-option:first-of-type {
 	background-image: url("../photos/img_02.jpg");
+	/* display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	position: relative; */
 	width: 400px;
 	transition: 0.4s;
 }
 .quick_helpers-option:nth-of-type(2) {
 	background-image: url("../photos/img_03.jpg");
+	/* display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	position: relative; */
 	width: 400px;
 	transition: 0.4s;
 }
 .quick_helpers-option:nth-of-type(3) {
 	background-image: url("../photos/img_05.jpg");
-	width: 400px;
+	/* display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	position: relative; */
+	width: 430px;
 	transition: 0.4s;
 }
 .quick_helpers-option:first-of-type:hover {
@@ -424,6 +465,15 @@ nav {
 	align-items: center;
 	gap: 2rem;
 	cursor: pointer;
+	transition: 0.4s;
+}
+
+.recomendations_products-prod:hover {
+	color: royalblue;
+}
+
+.recomendations_products-prod:hover {
+	scale: 1.05;
 }
 
 .recomendations_products-prod-info {
@@ -473,9 +523,11 @@ nav {
 	background: url("../photos/img_07.jpg");
 	min-height: 35rem;
 	width: 100%;
+	overflow: hidden;
 	background-size: cover;
 	background-repeat: no-repeat;
 	color: white;
+	display: flex;
 }
 .why_us_cover {
 	background: rgba(0, 0, 0, 0.35);
@@ -553,8 +605,12 @@ nav {
 
 .footer_section > ul > li {
 	font-size: 0.8rem;
+	transition: 0.4s;
 	cursor: pointer;
 
+}
+.footer_section > ul > li:hover{
+	color: royalblue;
 }
 .footer-section {
 	position: absolute;
@@ -579,6 +635,14 @@ nav {
 	/* color: white; */
 	font-size: 0.75rem;
 }
+
+@media screen and (width < 800x) {
+	.nav-action__item {
+		grid: none;
+		opacity: 0;
+	}
+}
+
 @media screen and (width < 730px) {
     .footer {
         grid: none;
@@ -590,14 +654,36 @@ nav {
 		/* grid-template-columns: 1tr 1tr 1tr; */
     }
 }
-@media screen and (width < 730px) {
-    .main_banner-img-cover, .main_banner-img-cover button {
+@media screen and (width < 800x) {
+    .main_banner-img-cover {
         grid: none;
+    }
+}
+@media screen and (width < 800x) {
+    .main_banner-img-cover :nth-of-type(3) {
+        grid: none;
+		opacity: 0%;
+    }
+}
+@media screen and (width < 800x) {
+    .main_banner-img-cover button {
+        grid: none;
+		opacity: 0%;
     }
 }
 @media screen and (width < 700px) {
     .advantages_op {
         grid: none;
 		/* grid-template-columns: 1tr 1tr 1tr; */
+    }
+}
+@media screen and (width < 825px) {
+    .why_us_cover {
+        grid: none;
+    }
+}
+@media screen and (width < 825px) {
+    .why_us_cover p {
+        grid: none;
     }
 }
