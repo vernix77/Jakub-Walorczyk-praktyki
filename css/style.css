@@ -37,7 +37,7 @@ nav {
 	
 }
 .nav__action-item {
-	/* font-weight: bold; */
+	font-weight: bold;
 	color: black;
 	display: flex;
 	width: fit-content;
@@ -58,13 +58,9 @@ nav {
 	color: royalblue;
 }
 
-.nav__action-item > img {
-	max-width: 2rem;
-}
-
 .nav__action-item > i {
 	max-width: 2rem;
-	font-size: 5rem;
+	font-size: 2rem;
 
 }
 
@@ -120,8 +116,9 @@ nav {
 	position: relative;
 }
 
-.nav__baner-cart-icon > img {
-	width: 2.5rem;
+.nav__baner-cart-icon > i {
+	max-width: 2.5rem;
+	font-size: 2rem;
 }
 
 .nav__baner-cart-arrow {
