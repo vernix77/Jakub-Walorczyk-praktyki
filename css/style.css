@@ -58,13 +58,17 @@ nav {
 	color: royalblue;
 }
 
+.nav__action-item > img {
+	max-width: 2rem;
+}
+
 .nav__action-item > i {
 	max-width: 2rem;
 	font-size: 2rem;
 
 }
 
-.nav_options {
+.nav__options {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
@@ -75,14 +79,14 @@ nav {
 	transition: 0.4s;
 }
 
-.nav_options > a {
+.nav__options > a {
 	color: black;
 	font-weight: bold;
 	text-decoration: none;
 	font-size: 0.75rem;
 	transition: 0.4s;
 }
-.nav_options a:hover{
+.nav__options a:hover{
 	color: royalblue;
 }
 
@@ -116,9 +120,8 @@ nav {
 	position: relative;
 }
 
-.nav__baner-cart-icon > i {
-	max-width: 2.5rem;
-	font-size: 2rem;
+.nav__baner-cart-icon > img {
+	width: 2.5rem;
 }
 
 .nav__baner-cart-arrow {
@@ -382,7 +385,7 @@ nav {
 	align-items: center;
 }
 
-.orange_markup {
+.orange__markup {
 	width: 3rem;
 	height: 0.2rem;
 	background-color: #f74137;
@@ -443,7 +446,7 @@ nav {
 	color: #ccc;
 }
 
-.inspiration_btn {
+.inspiration__btn {
 	background-color: #f74137;
 	color: white;
 	padding: 1rem 3rem;
@@ -453,17 +456,17 @@ nav {
 	transition: 0.4s;
 }
 
-.insp_wrapper {
+.insp__wrapper {
 	width: 100%;
 	display: flex;
 	align-items: center;
 	transition: 0.4s;
 }
-.inspiration_btn:hover{
+.inspiration__btn:hover{
 	scale: 1.05;
 }
 
-.why_us {
+.why__us {
 	background: url("../photos/img_07.jpg");
 	min-height: 35rem;
 	width: 100%;
@@ -473,7 +476,7 @@ nav {
 	color: white;
 	display: flex;
 }
-.why_us_cover {
+.why__us-cover {
 	background: rgba(0, 0, 0, 0.35);
 	width: 100%;
 	min-height: 35rem;
@@ -482,7 +485,7 @@ nav {
 	align-items: center;
 }
 
-.why_us_cover > h1 {
+.why__us-cover > h1 {
 	font-family: metropolis-bold;
 	margin-top: 4rem;
 	display: flex;
@@ -492,18 +495,18 @@ nav {
 	align-items: center;
 }
 
-.why_us_cover > p {
+.why__us-cover > p {
 	max-width: 55rem;
 	text-align: center;
 }
 
-.advantages {
+.advantages__container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 1rem;
 }
 
-.advantages_op {
+.advantages__op {
 	border: 1px solid rgb(171, 171, 171);
 	padding: 2rem;
 	display: flex;
@@ -512,12 +515,11 @@ nav {
 	align-items: center;
 }
 
-.advantages_op > p {
+.advantages__op > p {
 	margin: 0;
 	margin-top: 1.5rem;
 }
-
-.footer {
+.footer__container {
 	background-color: #393e40;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -525,13 +527,13 @@ nav {
 	gap: 3rem;
 	color: white;
 }
-.footer_section > h3 {
+.footer__section > h3 {
 	width: 100%;
 	border-bottom: 1px solid rgb(171, 171, 171);
 	position: relative;
 	padding-bottom: 1rem;
 }
-.footer_section > h3 > .orange_markup {
+.footer__section > h3 > .orange__markup {
 	position: absolute;
 	left: 0;
 	bottom: -1px;
@@ -539,7 +541,7 @@ nav {
 	height: 1px;
 }
 
-.footer_section > ul {
+.footer__section > ul {
 	list-style: none;
 	display: grid;
 	gap: 2rem;
@@ -547,16 +549,16 @@ nav {
 	margin-top: 3rem;
 }
 
-.footer_section > ul > li {
+.footer__section > ul > li {
 	font-size: 0.8rem;
 	transition: 0.4s;
 	cursor: pointer;
 
 }
-.footer_section > ul > li:hover{
+.footer__section > ul > li:hover{
 	color: royalblue;
 }
-.footer-section {
+/* .footer_section {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -564,8 +566,8 @@ nav {
 	color: black;
 	display: flex;
 	justify-content: space-between;
-}
-.footer_section-cpr{
+} */
+.footer__section-cpr{
 	/* background-color: #393e40; */
 	font-family: metropolis-light;
 	width: 100%;
@@ -580,6 +582,12 @@ nav {
 	font-size: 0.75rem;
 }
 
+@media screen and (width < 730px) {
+    .footer__container {
+        grid: none;
+    }
+}
+
 @media screen and (width < 800x) {
 	.nav__action-item {
 		grid: none;
@@ -587,11 +595,6 @@ nav {
 	}
 }
 
-@media screen and (width < 730px) {
-    .footer {
-        grid: none;
-    }
-}
 @media screen and (width < 345px) {
     .quick__helpers {
         grid: none;
@@ -617,18 +620,18 @@ nav {
     }
 }
 @media screen and (width < 700px) {
-    .advantages_op {
+    .advantages__op {
         grid: none;
 		/* grid-template-columns: 1tr 1tr 1tr; */
     }
 }
 @media screen and (width < 825px) {
-    .why_us_cover {
+    .why__us-cover {
         grid: none;
     }
 }
 @media screen and (width < 825px) {
-    .why_us_cover p {
+    .why__us-cover p {
         grid: none;
     }
 }
